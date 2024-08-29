@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNUP</title>
+    <link rel="stylesheet" href="static_files/signup.css">
+</head>
+<body>
+    <div class="login-container">
+        <form action="post">
+            <h2>SIGNUP</h2>
+            <div class="input-container grid-item">
+                <input type="text" id="user" required>
+                <label for="user">Username</label>
+            </div>
+            <div class="input-container grid-item">
+                <input type="password" id="password" required>
+                <label for="password">Password</label>
+            </div>
+            <div class="input-container grid-item">
+                <input type="password" id="retypepassword" required>
+                <label for="retypepassword">Retype password</label>
+            </div>
+            <div class="input-container grid-item">
+                <input type="text" id="FNAME" required>
+                <label for="FNAME">First name</label>
+            </div>
+            <div class="input-container grid-item">
+                <input type="text" id="LNAME" required>
+                <label for="LNAME">Last Name</label>
+            </div>
+            <div class="input-container grid-item">
+                <input type="date" id="DOB" required>
+                <label for="DOB">Date of Birth</label>
+            </div>
+            <div class="grid-item" style="text-align: left;">
+                <p style="color: black; margin-top: -20px;">Gender</p>
+                <input type="radio" id="male" name="gender" value="male" style="margin-right: 5px; margin-top: 25px;" required>
+                <label for="male" style="margin-right: 15px;">Male</label>
+                <input type="radio" id="female" name="gender" value="female" style="margin-right: 5px;" required>
+                <label for="female" style="margin-right: 15px;">Female</label>
+            </div>
+            <div class="input-container grid-item">
+                <select name="dept" id="dept" required>
+                    <option value="IT">IT</option>
+                    <option value="CSE">CSE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="MECH">MECH</option>
+                    <option value="CIVIL">CIVIL</option>
+                </select>
+                <label for="dept">Department</label>
+            </div>
+            
+            <button type="submit">Submit</button>
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </form>
+    </div>
+</body>
+</html>
